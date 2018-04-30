@@ -30,7 +30,7 @@ WHERE location = 'USA'
 ORDER BY quality_of_education ASC
 ```
 
-![Checkpoint3](Visualization/CP-1.png)
+![Presentation](Visualization/Presentation-1.png)
 
 
 2. -- Rank the world rank from the highest to lowest in UK
