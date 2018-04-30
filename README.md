@@ -3,6 +3,9 @@
 # Checkpoint3: World College Rankings
 
 * Datasets: World college ranking
+
+![Presentation](Visualization/Presentation-CWUR.png)
+
 * These colleges are ranked by location, national rank, quality of education, alumni employee, quality of faculty, publications, influences, citations, board impact, and patents, then it calculate a final score for ranking. Every column are ranking except of the score.
 
 
