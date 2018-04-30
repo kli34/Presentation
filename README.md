@@ -44,7 +44,7 @@ WHERE location = 'United Kingdom'
 ORDER BY world_rank ASC
 ```
 
-![Checkpoint3](Visualization/CP-2.png)
+![Presentation](Visualization/Presentation-2.png)
 
 
 3. -- Rank the publications based on the score between 80 to 100
@@ -58,7 +58,6 @@ WHERE score between '80' and '100'
 ORDER BY score DESC
 ```
 
-![Checkpoint3](Visualization/CP-3.png)
 
 
 4. -- What schools have citation between 100 to 300
@@ -74,7 +73,7 @@ GROUP BY institution, world_rank
 ORDER BY institution DESC
 ```
 
-![Checkpoint3](Visualization/CP-4.png)
+![Presentation](Visualization/Presentation-4.png)
 
 
 5.-- In the US, what schools have alumi-employment between 270 to 600
@@ -89,7 +88,6 @@ GROUP BY institution, location,alumni_employment
 ORDER BY alumni_employment DESC
 ```
 
-![Checkpoint3](Visualization/CP-5.png)
 
 
 6. -- What schools have score below 60?
@@ -103,8 +101,6 @@ WHERE score <= '60'
 ORDER BY score DESC
 ```
 
-![Checkpoint3](Visualization/CP-6.png)
-
 
 7. -- What schools have broad_impact below 300?
 
@@ -117,8 +113,6 @@ WHERE broad_impact <= '300'
 ORDER BY broad_impact DESC
 ```
 
-![Checkpoint3](Visualization/CP-7.png)
-
 
 8. -- What is the rank of influence in South Korea
 
@@ -130,7 +124,7 @@ FROM datasets.world_college_ranking
 WHERE location = 'South Korea'
 ORDER BY influence ASC
 ```
-![Checkpoint3](Visualization/CP-8.png)
+![Presentation](Visualization/Presentation-8.png)
 
 9. -- What is the influence rank for Japan between 100 to 309
 
@@ -143,7 +137,7 @@ WHERE location = 'Japan' and influence between '100' and '309'
 ORDER BY influence DESC
 ```
 
-![Checkpoint3](Visualization/CP-9.png)
+![Presentation](Visualization/Presentation-9.png)
 
 
 10. -- what colleges have national rank between 15 to 270 and quality of education between 150 to 400
@@ -156,6 +150,4 @@ FROM datasets.world_college_ranking
 WHERE national_rank between '15' and '270' AND quality_of_education between '150' and '400'
 ORDER BY national_rank, quality_of_education DESC
 ```
-
-![Checkpoint3](Visualization/CP-10.png)
 
