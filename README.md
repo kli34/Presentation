@@ -51,7 +51,7 @@ ORDER BY world_rank ASC
 ![Presentation](Visualization/Presentation-2.png)
 
 
-3. -- Top 10 school: Publication VS World Rank
+3. -- The correlation between world ranking and publication
 
 We are comparing publicaion and world rank for top 10 schools, and then we have Harvard rank both 1st place for publication and world rank, Stanford ranks the second for world and 5th for publication. Based on the data, they have high correlation between this two ranking.
 
