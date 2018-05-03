@@ -10,7 +10,7 @@
 
 
 * National Rank: basically order the final score for each colleges
-* Quality of Education: it was calcualted from students' overall GPA from classes
+* Quality of Education: it was calcualted from students' overall GPA from classes also for the future employment
 * Alumni Employment: amount student who graduated from their old school and keep working there
 * Quality of faculty: Based on teacher evaluation from students
 * Publication: based on the sales volume from school's publication (book or research)
