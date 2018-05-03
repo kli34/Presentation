@@ -92,6 +92,7 @@ GROUP BY institution, location,alumni_employment
 ORDER BY alumni_employment DESC
 ```
 
+![Presentation](Visualization/Presentation-5.png)
 
 
 6. -- What schools have score below 60?
