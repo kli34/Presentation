@@ -62,7 +62,7 @@ GROUP BY publications, institution, world_rank
 ORDER BY world_rank ASC
 ```
 
-
+![Presentation](Visualization/Presentation-3.png)
 
 4. -- The correlation between world ranking and citation
 
