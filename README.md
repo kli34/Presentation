@@ -18,6 +18,7 @@
 * Citation: It is just amount of citation
 * Board Impact: influence created by the board of directors
 * Patent: The number of patent they created 
+* Score: based on the ranking on the top
 
 
 Business Question: From this dataset, we can answer what colleges is the best in UK or some other countries, we can also find out the colleges have score below maybe 60 or 70. We are able to rank influences from highest to lowest. 
