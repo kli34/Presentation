@@ -79,16 +79,15 @@ ORDER BY citations DESC
 
 
 
-5.-- In the US, what schools have alumi-employment between 270 to 600
+5.-- -- Top 10 Korea Patents Ranking
 
-We are trying to rank us schools based on theri alumi-employment between 270 to 600 but we only want to rank the top 10, so we only have our actual rank between 593 to 534, that means the schools on the graph do not have very good alumi-employment due to lower ranking offered by the dataset. This time, we did DESC because we must get the highest number first. The higher number they have, the lower rank they've gotten. 
+Korea Schools have excellent technoloy innovation although the world ranks are not that competitive with the United States but SK is the best on technology currently. 
 
 ```SQL
-SELECT institution, location, alumni_employment
+SELECT institution, patents, world_rank
 FROM datasets.world_college_ranking
-Where location = 'USA' AND alumni_employment between '270' AND '600'
-GROUP BY institution, location,alumni_employment
-ORDER BY alumni_employment DESC
+WHERE location = 'South Korea' 
+ORDER BY patents DESC
 ```
 
 ![Presentation](Visualization/Presentation-5.png)
