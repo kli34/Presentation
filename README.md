@@ -64,14 +64,13 @@ ORDER BY world_rank ASC
 
 
 
-4. -- What schools have citation between 100 to 300
+4. -- The correlation between world ranking and citation
 
 For Q4, We ranked schools based on their rank of citation between 100 to 300. 
 
 ```SQL
 SELECT institution, world_rank, citations
 FROM datasets.world_college_ranking
-WHERE citations between '100' and '300'
 GROUP BY institution, world_rank, citations
 ORDER BY citations DESC
 ```
