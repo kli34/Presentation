@@ -79,7 +79,7 @@ ORDER BY citations DESC
 
 
 
-5.-- -- Top 10 Korea Patents Ranking
+5.-- -- South Korea world ranking vs patents ranking
 
 Korea Schools have excellent technoloy innovation although the world ranks are not that competitive with the United States but SK is the best on technology currently. 
 
