@@ -11,7 +11,7 @@
 
 * National Rank: basically order the final score for each colleges
 * Quality of Education: it was calcualted from students' overall GPA from classes
-* Alumni Employee: It focues on amount student who graduated from their old school and keep working there
+* Alumni Employee: amount student who graduated from their old school and keep working there
 * Quality of faculty: Based on teacher evaluation from students
 * Publication: based on the sales volume from school's publication (book or research)
 * influences: basically calcualte the amount of honorees and Distinguished Alumni
