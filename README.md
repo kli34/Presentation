@@ -145,15 +145,17 @@ ORDER BY influence DESC
 ![Presentation](Visualization/Presentation-9.png)
 
 
-10. -- what colleges have national rank between 15 to 270 and quality of education between 150 to 400
+10. -- How many different countries make up the top 100 universities?
 
-The dataset gives us a huge amount of data and each ranking for the college. For the question, we are trying to find out any shcool with rank between 15 t0 270 and then we have code the quality of education from 150 to 400 out. Definitely, we use where function to code the data we want. Then we have the result, we have National Taiwan Normal Univ with national rank of 15 and quality of education rank of 383.
+Firstly, the dataset gives us the location and we are trying to find out what countires does the top 100 univ include. We count location again but this time we do n_location. We set the world rank between 1 and 100. Afterward, we order the n_location desc. As a result, we still have USA with 54 colleges and then we have UK with 7 schools, and we just have few Asian school rank top 100. 
 
 ```SQL
-SELECT institution, national_rank, quality_of_education
+SELECT location,
+count(location) as n_location
 FROM datasets.world_college_ranking
-WHERE national_rank between '15' and '270' AND quality_of_education between '150' and '400'
-ORDER BY national_rank, quality_of_education DESC
+WHERE world_rank between '1' and '100'
+group BY location
+ORDER BY n_location DESC
 ```
 ![Presentation](Visualization/Presentation-10.png)
 
