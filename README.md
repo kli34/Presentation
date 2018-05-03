@@ -93,16 +93,18 @@ ORDER BY patents DESC
 ![Presentation](Visualization/Presentation-5.png)
 
 
-6. -- What schools have score below 60?
+6. -- What regions have the high density of the top 1000 university in the world?
 
-This time, we selected school have lower score below 60 that kindly means they are not that competitive with schools that have higher ranks. Firstly, we have score from the dataset, and then we code it and selece schools below 60 out. afterward, we can order them from the highest(59.13) to the lowest(56.1) based on the graph. 
+We are looking for which countries have the most number of school from the dataset. After coding, North America (US and Canada) has the most number of colleges, and then is west Europe (Britian, Germany, and France etc). East Asia ranked the third place (China, Japan, Korea atc.)
 
 ```SQL
-SELECT institution, score
+SELECT location,
+count(location) as c_location
 FROM datasets.world_college_ranking
-WHERE score <= '60'
-ORDER BY score DESC
+group BY location
+ORDER BY c_location DESC
 ```
+![Presentation](Visualization/Presentation-6.png)
 
 
 7. -- What schools have broad_impact below 300?
