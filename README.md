@@ -155,4 +155,5 @@ FROM datasets.world_college_ranking
 WHERE national_rank between '15' and '270' AND quality_of_education between '150' and '400'
 ORDER BY national_rank, quality_of_education DESC
 ```
+![Presentation](Visualization/Presentation-CWUR.jpg)
 
