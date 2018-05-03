@@ -39,7 +39,7 @@ ORDER BY quality_of_education ASC
 
 2. -- Rank the world rank from the highest to lowest in UK
 
-For Q2, we want to have our world rank for British schools ranked from highest to lowest. From the dataset, we still have world rank and we also have institution grouped. While ordering the world rank, we still did ASC. And then we have Cambridge ranked the 4th place, Oxford ranked the 5th place and other 8 British schools' ranking in the graph. 
+For Q2, we want to have our world rank for British schools ranked from highest to lowest. From the dataset, we still have world rank and we also have institution grouped. While ordering the world rank, we still did ASC. And then we have Cambridge ranked the 4th place, Oxford ranked the 5th place and other 8 British schools' ranking in the graph. And Univ of Virginia ranks 40 in the world but 108 for the publication
 
 ```SQL
 SELECT world_rank, institution
@@ -53,7 +53,7 @@ ORDER BY world_rank ASC
 
 3. -- The correlation between world ranking and publication
 
-We are comparing publicaion and world rank for top 10 schools, and then we have Harvard rank both 1st place for publication and world rank, Stanford ranks the second for world and 5th for publication. Based on the data, they have high correlation between this two ranking.
+We are comparing publicaion and world rank for top 10 schools, and then we have Harvard rank both 1st place for publication and world rank, Stanford ranks the second for world and 5th for publication. Based on the data, they do have correlation between this two ranking but it is actually no that high based on the graph because CalTech ranks 11 in the world but 82 for the publication. 
 
 ```SQL
 SELECT publications, institution, world_rank
