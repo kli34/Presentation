@@ -66,7 +66,7 @@ ORDER BY world_rank ASC
 
 4. -- The correlation between world ranking and citation
 
-For Q4, We ranked schools based on their rank of citation between 100 to 300. 
+For Q4, we found out there is also strong correlation between world ranking and citation rank. We have Harvard again taking 1st place for both, and then we have UCLA ranks 15th in the world and 9th for citation. NYU ranks 19th in the world and 32nd for citation. 
 
 ```SQL
 SELECT institution, world_rank, citations
@@ -74,6 +74,7 @@ FROM datasets.world_college_ranking
 GROUP BY institution, world_rank, citations
 ORDER BY citations DESC
 ```
+![Presentation](Visualization/Presentation-4.png)
 
 
 
