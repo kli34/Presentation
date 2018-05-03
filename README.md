@@ -51,16 +51,15 @@ ORDER BY world_rank ASC
 ![Presentation](Visualization/Presentation-2.png)
 
 
-3. -- Rank the publications based on the score between 80 to 100
+3. -- Top 10 school: Publication VS World Rank
 
-Firstly, the data provides us publication and then we have to select score between 80 to 100 based on the question we created. We basically rank the publication by ordering the final score between 80 to 100 then we have our final answer that the school with score of 100 is the first place, the school with score of 96.86 is the 5th place in the world. 
+We are comparing publicaion and world rank for top 10 schools, and then we have Harvard rank both 1st place for publication and world rank, Stanford ranks the second for world and 5th for publication. Based on the data, they have high correlation between this two ranking.
 
 ```SQL
-SELECT publications, institution
+SELECT publications, institution, world_rank
 FROM datasets.world_college_ranking
-WHERE score between '80' and '100'
-GROUP BY publications, institution
-ORDER BY publications DESC
+GROUP BY publications, institution, world_rank
+ORDER BY world_rank ASC
 ```
 
 
