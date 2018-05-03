@@ -77,7 +77,7 @@ GROUP BY institution, world_rank
 ORDER BY institution DESC
 ```
 
-![Presentation](Visualization/Presentation-4.png)
+
 
 
 5.-- In the US, what schools have alumi-employment between 270 to 600
