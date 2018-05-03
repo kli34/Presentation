@@ -56,27 +56,26 @@ ORDER BY world_rank ASC
 Firstly, the data provides us publication and then we have to select score between 80 to 100 based on the question we created. We basically rank the publication by ordering the final score between 80 to 100 then we have our final answer that the school with score of 100 is the first place, the school with score of 96.86 is the 5th place in the world. 
 
 ```SQL
-SELECT publications, score
+SELECT publications, institution
 FROM datasets.world_college_ranking
 WHERE score between '80' and '100'
-ORDER BY score DESC
+GROUP BY publications, institution
+ORDER BY publications DESC
 ```
 
 
 
 4. -- What schools have citation between 100 to 300
 
-For Q4, We ranked schools based on their rank of citation between 100 to 300. The dataset provides citation as main data for this question, but they all have citation ranked in 278 after coding, so we count citations as w_cit to save some space, and then we have 1 showing on graph. 
+For Q4, We ranked schools based on their rank of citation between 100 to 300. 
 
 ```SQL
-SELECT institution, world_rank,
-    count(citations) as w_cit
+SELECT institution, world_rank, citations
 FROM datasets.world_college_ranking
 WHERE citations between '100' and '300'
-GROUP BY institution, world_rank
-ORDER BY institution DESC
+GROUP BY institution, world_rank, citations
+ORDER BY citations DESC
 ```
-
 
 
 
