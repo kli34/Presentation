@@ -106,17 +106,17 @@ ORDER BY c_location DESC
 ![Presentation](Visualization/Presentation-6.png)
 
 
-7. -- What schools have broad_impact below 300?
+7. -- What countries are prominent in top 10 universities in the world?
 
-For Q7, we just want to select schools with broad impact rank below 300 that means they are on average. This time, we did not group at all, we just putted broad impact less and equal than 300 then we ordered them. Since we only do top 10, so basically the rank is between 296 to 290. 
+For Q7, we are looking for what countries have schools ranked top 10, then we have USA and UK on top 10. 
 
 ```SQL
-SELECT institution, broad_impact
+SELECT institution, location, world_rank
 FROM datasets.world_college_ranking
-WHERE broad_impact <= '300'
-ORDER BY broad_impact DESC
+WHERE world_rank < '10'
+ORDER BY world_rank ASC
 ```
-
+![Presentation](Visualization/Presentation-7.png)
 
 8. -- What is the rank of influence in South Korea
 
