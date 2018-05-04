@@ -16,7 +16,7 @@
 * Publication: based on the sales volume from school's publication (book or research)
 * influences: basically calcualte the amount of honorees and Distinguished Alumni
 * Citation: It is just amount of citation
-* Board Impact: influence created by the board of directors
+* Broad Impact: influence created by the board of directors
 * Patent: The number of patent they created 
 * Score: based on the ranking on the top
 
